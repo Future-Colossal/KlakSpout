@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Klak.Spout {
@@ -96,7 +97,22 @@ public sealed partial class SpoutReceiver : MonoBehaviour
         if (_targetRenderer != null)
             RendererOverride.SetTexture
               (_targetRenderer, _targetMaterialProperty, buffer);
+
+        try
+        {
+            TextureUpdated?.Invoke(this, null);
+        }
+        catch (Exception e)
+        {
+            Debug.LogException(e, this);
+        }
     }
+
+    #endregion
+    
+    #region Alert Implementation
+
+    public event EventHandler TextureUpdated;
 
     #endregion
 }
