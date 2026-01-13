@@ -1,3 +1,8 @@
+> [!NOTE]  
+> Use the following urls of cloning this repository in UPM:
+> SSH: git@github.com:Future-Colossal/KlakSpout?path=/Packages/jp.keijiro.klak.spout
+> HTTP: https://github.com/Future-Colossal/KlakSpout?path=/Packages/jp.keijiro.klak.spout
+
 # KlakSpout
 
 ![gif](https://user-images.githubusercontent.com/343936/124232423-993f6c00-db4c-11eb-80d3-4c660a2025d9.gif)
